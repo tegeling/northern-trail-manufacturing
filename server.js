@@ -100,7 +100,8 @@ let org = nforce.createConnection({
     environment: "sandbox",
     redirectUri: 'http://localhost:3000/oauth/_callback',
     mode: 'single',
-    autoRefresh: true
+    autoRefresh: true,
+    testLoginUri : 'https://data-enterprise-1967-dev-ed.cs89.my.salesforce.com/services/oauth2/token'
 });
 
 org.authenticate({username: SF_USER_NAME, password: SF_USER_PASSWORD}, err => {
