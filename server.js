@@ -97,7 +97,7 @@ let SF_USER_PASSWORD = process.env.SF_USER_PASSWORD;
 let org = nforce.createConnection({
     clientId: SF_CLIENT_ID,
     clientSecret: SF_CLIENT_SECRET,
-    environment: "production",
+    environment: "sandbox",
     redirectUri: 'http://localhost:3000/oauth/_callback',
     mode: 'single',
     autoRefresh: true
